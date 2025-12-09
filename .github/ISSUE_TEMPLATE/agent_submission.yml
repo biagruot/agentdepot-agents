@@ -1,0 +1,138 @@
+name: ➕ Submit an Agent
+description: Submit a new agent (alternative to Pull Request)
+title: "[Agent]: "
+labels: ["agent-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Submit an Agent
+
+        **Prefer to submit via Pull Request?** See [CONTRIBUTING.md](../CONTRIBUTING.md) for instructions.
+
+        This form is for users who aren't comfortable with Git. We'll review your submission and add it for you.
+
+  - type: input
+    id: tool
+    attributes:
+      label: Tool
+      description: Which tool is this agent for?
+      placeholder: cursor, windsurf, claude-code, replit, or mcp
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: Agent Name
+      description: Display name for the agent
+      placeholder: e.g., React + TypeScript Professional
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Short Description
+      description: One-line description (max 150 characters)
+      placeholder: What does this agent do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: full-description
+    attributes:
+      label: Full Description (Optional)
+      description: Detailed description in markdown
+      placeholder: |
+        ## Features
+        - Feature 1
+        - Feature 2
+
+        ## Usage
+        How to use this agent...
+    validations:
+      required: false
+
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      description: Primary category
+      placeholder: coding, debugging, testing, web, data, productivity, or other
+    validations:
+      required: true
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Comma-separated tags (2-5 recommended)
+      placeholder: e.g., react, typescript, tailwind
+    validations:
+      required: true
+
+  - type: textarea
+    id: installation
+    attributes:
+      label: Installation Instructions
+      description: How to install this agent?
+      placeholder: |
+        1. Copy the content below
+        2. Paste into .cursorrules file
+        3. Restart Cursor
+    validations:
+      required: true
+
+  - type: input
+    id: author-name
+    attributes:
+      label: Author Name
+      description: Your name or username
+      placeholder: e.g., John Doe
+    validations:
+      required: true
+
+  - type: input
+    id: author-github
+    attributes:
+      label: Author GitHub (Optional)
+      description: Your GitHub profile URL
+      placeholder: https://github.com/username
+    validations:
+      required: false
+
+  - type: input
+    id: source-url
+    attributes:
+      label: Source URL (Optional)
+      description: GitHub repo or website
+      placeholder: https://github.com/...
+    validations:
+      required: false
+
+  - type: textarea
+    id: agent-content
+    attributes:
+      label: Agent Content (Optional)
+      description: If applicable, paste the agent content here
+      placeholder: |
+        Paste your Cursor rule, agent code, or other content here...
+      render: shell
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Submission Checklist
+      description: Please confirm the following
+      options:
+        - label: I have tested this agent and it works
+          required: true
+        - label: I have properly attributed the original author (if applicable)
+          required: true
+        - label: This agent does not contain malicious code
+          required: true
+        - label: I agree to the MIT License terms
+          required: true

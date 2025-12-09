@@ -1,0 +1,110 @@
+name: Validate Agent Submissions
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'agents/**/*.ts'
+      - 'types/**/*.ts'
+  push:
+    branches: [main]
+    paths:
+      - 'agents/**/*.ts'
+      - 'types/**/*.ts'
+
+jobs:
+  validate:
+    name: Validate Agents
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          npm install --save-dev typescript @types/node
+          echo "✅ Dependencies installed"
+
+      - name: Validate TypeScript compilation
+        run: |
+          echo "🔍 Checking TypeScript compilation..."
+          npx tsc --noEmit --skipLibCheck agents/*.ts types/*.ts || {
+            echo "❌ TypeScript compilation failed"
+            exit 1
+          }
+          echo "✅ TypeScript compilation successful"
+
+      - name: Check for duplicate agent IDs
+        run: |
+          echo "🔍 Checking for duplicate agent IDs..."
+
+          # Extract all IDs from agent files
+          IDS=$(grep -rh "id:" agents/*.ts | sed 's/.*id: *["'\'']\([^"'\'']*\)["'\''].*/\1/' | sort)
+
+          # Check for duplicates
+          DUPLICATES=$(echo "$IDS" | uniq -d)
+
+          if [ -n "$DUPLICATES" ]; then
+            echo "❌ Found duplicate agent IDs:"
+            echo "$DUPLICATES"
+            exit 1
+          fi
+
+          echo "✅ No duplicate IDs found"
+
+      - name: Validate agent schema (basic)
+        run: |
+          echo "🔍 Validating agent schema..."
+
+          # Check that required fields exist in agent files
+          REQUIRED_FIELDS=("id:" "name:" "description:" "tool:" "type:" "category:" "author:" "installation:" "verified:" "createdAt:")
+
+          for file in agents/*.ts; do
+            echo "Checking $file..."
+            for field in "${REQUIRED_FIELDS[@]}"; do
+              if ! grep -q "$field" "$file"; then
+                echo "❌ Missing required field '$field' in $file"
+                exit 1
+              fi
+            done
+          done
+
+          echo "✅ All required fields present"
+
+      - name: Check file naming convention
+        run: |
+          echo "🔍 Checking file naming conventions..."
+
+          # Check that agent files are in correct locations
+          VALID_FILES=("agents/cursor.ts" "agents/windsurf.ts" "agents/claude-code.ts" "agents/mcp.ts" "agents/replit.ts")
+
+          for file in agents/*.ts; do
+            if [[ ! " ${VALID_FILES[@]} " =~ " ${file} " ]]; then
+              echo "❌ Invalid agent file: $file"
+              echo "💡 Agent files must be one of: cursor.ts, windsurf.ts, claude-code.ts, mcp.ts, replit.ts"
+              exit 1
+            fi
+          done
+
+          echo "✅ File naming conventions correct"
+
+      - name: Summary
+        if: success()
+        run: |
+          echo ""
+          echo "✅ All validation checks passed!"
+          echo ""
+          echo "📋 Checks completed:"
+          echo "  ✓ TypeScript compilation"
+          echo "  ✓ No duplicate IDs"
+          echo "  ✓ Required fields present"
+          echo "  ✓ File naming conventions"
+          echo ""
+          echo "🎉 Ready for review!"

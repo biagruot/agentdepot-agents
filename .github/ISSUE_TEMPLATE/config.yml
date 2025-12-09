@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Questions & Support
+    url: mailto:support@agentdepot.dev
+    about: Email us for questions or support
+  - name: 🌐 Browse Agents
+    url: https://agentdepot.dev
+    about: Visit AgentDepot.dev to browse all agents
+  - name: 📚 Contributing Guide
+    url: https://github.com/biagruot/agentdepot-agents/blob/main/CONTRIBUTING.md
+    about: Read the full contribution guidelines

@@ -1,0 +1,57 @@
+name: 🐛 Bug Report
+description: Report a problem with an existing agent
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug!
+
+  - type: input
+    id: agent-id
+    attributes:
+      label: Agent ID
+      description: Which agent has the issue?
+      placeholder: e.g., cursor-react-typescript
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What's wrong?
+      description: Describe the issue clearly
+      placeholder: The agent doesn't work as described...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should happen?
+      placeholder: The agent should...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Install the agent
+        2. Try to use it
+        3. See error
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other information that might help
+      placeholder: Screenshots, error messages, etc.
+    validations:
+      required: false

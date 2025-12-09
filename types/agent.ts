@@ -27,7 +27,6 @@ export interface Agent {
   tags: string[];
   author: AgentAuthor;
   installation: AgentInstallation;
-  verified: boolean;
   featured?: boolean;
   trending?: boolean;
   stats?: {
