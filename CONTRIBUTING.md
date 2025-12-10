@@ -64,6 +64,7 @@ Thank you for contributing! This guide will help you add agents quickly.
 - `links.github` - Source code URL
 - `links.website` - Project website
 - `links.demo` - Demo video (YouTube)
+- `license` - License identifier (e.g., "MIT", "Apache-2.0", "GPL-3.0", "Proprietary")
 
 **Full type definition:** See `types/agent.ts`
 
@@ -188,7 +189,7 @@ Be respectful, constructive, and helpful. No harassment, spam, or trolling.
 
 ## 📞 Contact
 
-- Email: support@agentdepot.dev
+- Email: hello@agentdepot.dev
 - Website: [agentdepot.dev](https://agentdepot.dev)
 
 ---

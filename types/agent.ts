@@ -38,6 +38,7 @@ export interface Agent {
     website?: string;
     demo?: string; // Video URL
   };
+  license?: string; // e.g., "MIT", "Apache-2.0", "GPL-3.0", "Proprietary", etc.
   createdAt: string;
   updatedAt?: string;
 }

@@ -112,7 +112,7 @@ MIT License - See [LICENSE](./LICENSE)
 
 - **Browse agents:** [agentdepot.dev](https://agentdepot.dev)
 - **Report issue:** [GitHub Issues](https://github.com/biagruot/agentdepot-agents/issues)
-- **Email:** support@agentdepot.dev
+- **Email:** hello@agentdepot.dev
 
 ---
 
