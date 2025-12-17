@@ -1,10 +1,11 @@
-import { Agent } from '../types/agent';
+import { Agent } from "../types/agent";
 
 export const cursorAgents: Agent[] = [
   {
-    id: 'angular-typescript-best-practices',
-    name: 'Angular TypeScript Best Practices',
-    description: 'Expert guidelines for Angular development with TypeScript, Jest, and performant code standards.',
+    id: "angular-typescript-best-practices",
+    name: "Angular TypeScript Best Practices",
+    description:
+      "Expert guidelines for Angular development with TypeScript, Jest, and performant code standards.",
     fullDescription: `you are an expert Angular programmer using TypeScript, Angular 18 and Jest that focuses on producing clear, readable code.
 
 you are thoughtful, give nuanced answers, and are brilliant at reasoning.
@@ -40,25 +41,25 @@ when refactoring existing code, keep jsdoc comments intact
 be concise and minimize extraneous prose.
 
 if you don't know the answer to a request, say so instead of making something up.`,
-    tool: 'cursor',
-    type: 'rule',
-    category: 'web',
-    tags: ['Angular', 'TypeScript', 'Jest'],
+    tool: "cursor",
+    type: "rule",
+    category: "web",
+    tags: ["Angular", "TypeScript", "Jest"],
     author: {
-      name: 'Awesome Cursor Rules Community',
-      url: 'https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/angular-typescript-cursorrules-prompt-file/.cursorrules',
+      name: "Awesome Cursor Rules Community",
+      url: "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/angular-typescript-cursorrules-prompt-file/.cursorrules",
     },
     installation: {
-      type: 'manual',
-      instructions: 'Copy the content to .cursorrules in your project root.',
+      type: "manual",
+      instructions: "Copy the content to .cursorrules in your project root.",
     },
-    verified: true,
-    createdAt: '2025-12-06',
+    createdAt: "2025-12-06",
   },
   {
-    id: 'astro-typescript-tailwind',
-    name: 'Astro TypeScript & Tailwind Guidelines',
-    description: 'Rules for Astro development with TypeScript, TailwindCSS, and conventional commit messages.',
+    id: "astro-typescript-tailwind",
+    name: "Astro TypeScript & Tailwind Guidelines",
+    description:
+      "Rules for Astro development with TypeScript, TailwindCSS, and conventional commit messages.",
     fullDescription: `{
   "rules": {
     "commit_message_guidelines": {
@@ -132,25 +133,25 @@ if you don't know the answer to a request, say so instead of making something up
     }
   }
 }`,
-    tool: 'cursor',
-    type: 'rule',
-    category: 'web',
-    tags: ['Astro', 'TypeScript', 'Tailwind'],
+    tool: "cursor",
+    type: "rule",
+    category: "web",
+    tags: ["Astro", "TypeScript", "Tailwind"],
     author: {
-      name: 'Awesome Cursor Rules Community',
-      url: 'https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/astro-typescript-cursorrules-prompt-file/.cursorrules',
+      name: "Awesome Cursor Rules Community",
+      url: "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/astro-typescript-cursorrules-prompt-file/.cursorrules",
     },
     installation: {
-      type: 'manual',
-      instructions: 'Copy the content to .cursorrules in your project root.',
+      type: "manual",
+      instructions: "Copy the content to .cursorrules in your project root.",
     },
-    verified: true,
-    createdAt: '2025-12-06',
+    createdAt: "2025-12-06",
   },
   {
-    id: 'nextjs-15-react-19-pro',
-    name: 'Next.js 15 & React 19 Professional',
-    description: 'Expert rules for Next.js 15 App Router, React 19, Vercel AI SDK, and Shadcn UI.',
+    id: "nextjs-15-react-19-pro",
+    name: "Next.js 15 & React 19 Professional",
+    description:
+      "Expert rules for Next.js 15 App Router, React 19, Vercel AI SDK, and Shadcn UI.",
     fullDescription: `You are an expert senior software engineer specializing in modern web development, with deep expertise in TypeScript, React 19, Next.js 15 (App Router), Vercel AI SDK, Shadcn UI, Radix UI, and Tailwind CSS. You are thoughtful, precise, and focus on delivering high-quality, maintainable solutions.
 
 ## Analysis Process
@@ -232,25 +233,25 @@ const { isEnabled } = await draftMode()
 const params = await props.params
 const searchParams = await props.searchParams
 \`\`\``,
-    tool: 'cursor',
-    type: 'rule',
-    category: 'web',
-    tags: ['Next.js', 'React', 'TypeScript', 'Tailwind', 'Shadcn'],
+    tool: "cursor",
+    type: "rule",
+    category: "web",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind", "Shadcn"],
     author: {
-      name: 'Awesome Cursor Rules Community',
-      url: 'https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/nextjs15-react19-vercelai-tailwind-cursorrules-prompt-file/.cursorrules',
+      name: "Awesome Cursor Rules Community",
+      url: "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/nextjs15-react19-vercelai-tailwind-cursorrules-prompt-file/.cursorrules",
     },
     installation: {
-      type: 'manual',
-      instructions: 'Copy the content to .cursorrules in your project root.',
+      type: "manual",
+      instructions: "Copy the content to .cursorrules in your project root.",
     },
-    verified: true,
-    createdAt: '2025-12-06',
+    createdAt: "2025-12-06",
   },
   {
-    id: 'cursor-ai-react-typescript',
-    name: 'Cursor AI React & TypeScript',
-    description: 'Focused rules for clear, readable React and TypeScript code using the latest stable versions.',
+    id: "cursor-ai-react-typescript",
+    name: "Cursor AI React & TypeScript",
+    description:
+      "Focused rules for clear, readable React and TypeScript code using the latest stable versions.",
     fullDescription: `You are an expert AI programming assistant that primarily focuses on producing clear, readable React and TypeScript code.
 
 You always use the latest stable version of TypeScript, JavaScript, React, Node.js, Next.js App Router, Shadcn UI, Tailwind CSS and you are familiar with the latest features and best practices.
@@ -270,25 +271,25 @@ Performance Optimization
 Other Rules need to follow:
 
 Don't be lazy, write all the code to implement features I ask for.`,
-    tool: 'cursor',
-    type: 'rule',
-    category: 'web',
-    tags: ['React', 'TypeScript', 'Next.js'],
+    tool: "cursor",
+    type: "rule",
+    category: "web",
+    tags: ["React", "TypeScript", "Next.js"],
     author: {
-      name: 'Awesome Cursor Rules Community',
-      url: 'https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/cursor-ai-react-typescript-shadcn-ui-cursorrules-p/.cursorrules',
+      name: "Awesome Cursor Rules Community",
+      url: "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/cursor-ai-react-typescript-shadcn-ui-cursorrules-p/.cursorrules",
     },
     installation: {
-      type: 'manual',
-      instructions: 'Copy the content to .cursorrules in your project root.',
+      type: "manual",
+      instructions: "Copy the content to .cursorrules in your project root.",
     },
-    verified: true,
-    createdAt: '2025-12-06',
+    createdAt: "2025-12-06",
   },
   {
-    id: 'elixir-phoenix-expert',
-    name: 'Elixir Phoenix Expert',
-    description: 'Expert senior Elixir engineer rules for Phoenix, Docker, PostgreSQL, and Tailwind CSS.',
+    id: "elixir-phoenix-expert",
+    name: "Elixir Phoenix Expert",
+    description:
+      "Expert senior Elixir engineer rules for Phoenix, Docker, PostgreSQL, and Tailwind CSS.",
     fullDescription: `Act as an expert senior Elixir engineer.
 
 Stack: Elixir, Phoenix, Docker, PostgreSQL, Tailwind CSS, LeftHook, Sobelow, Credo, Ecto, ExUnit, Plug, Phoenix LiveView, Phoenix LiveDashboard, Gettext, Jason, Swoosh, Finch, DNS Cluster, File System Watcher, Release Please, ExCoveralls
@@ -327,25 +328,25 @@ Where:
 - **footer (optional):** One or more footers in the following format:
   - \`BREAKING CHANGE: \` (for breaking changes)
   - \`<issue_tracker_id>: \` (e.g., \`Jira-123: Fixed bug in authentication\`)`,
-    tool: 'cursor',
-    type: 'rule',
-    category: 'coding',
-    tags: ['Elixir', 'Phoenix', 'Docker'],
+    tool: "cursor",
+    type: "rule",
+    category: "coding",
+    tags: ["Elixir", "Phoenix", "Docker"],
     author: {
-      name: 'Awesome Cursor Rules Community',
-      url: 'https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/elixir-phoenix-docker-setup-cursorrules-prompt-fil/.cursorrules',
+      name: "Awesome Cursor Rules Community",
+      url: "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/elixir-phoenix-docker-setup-cursorrules-prompt-fil/.cursorrules",
     },
     installation: {
-      type: 'manual',
-      instructions: 'Copy the content to .cursorrules in your project root.',
+      type: "manual",
+      instructions: "Copy the content to .cursorrules in your project root.",
     },
-    verified: true,
-    createdAt: '2025-12-06',
+    createdAt: "2025-12-06",
   },
   {
-    id: 'go-servemux-rest-api',
-    name: 'Go ServeMux REST API',
-    description: 'Expert rules for building Go 1.22+ APIs using the standard library and ServeMux.',
+    id: "go-servemux-rest-api",
+    name: "Go ServeMux REST API",
+    description:
+      "Expert rules for building Go 1.22+ APIs using the standard library and ServeMux.",
     fullDescription: `You are an expert AI programming assistant specializing in building APIs with Go, using the standard library's net/http package and the new ServeMux introduced in Go 1.22.
 
 Always use the latest stable version of Go (1.22 or newer) and be familiar with RESTful API design principles, best practices, and Go idioms.
@@ -375,25 +376,25 @@ Offer suggestions for testing the API endpoints using Go's testing package.
 Always prioritize security, scalability, and maintainability in your API designs and implementations.
 
 Leverage the power and simplicity of Go's standard library to create efficient and idiomatic APIs.`,
-    tool: 'cursor',
-    type: 'rule',
-    category: 'coding',
-    tags: ['Go', 'API', 'REST'],
+    tool: "cursor",
+    type: "rule",
+    category: "coding",
+    tags: ["Go", "API", "REST"],
     author: {
-      name: 'Awesome Cursor Rules Community',
-      url: 'https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/go-servemux-rest-api-cursorrules-prompt-file/.cursorrules',
+      name: "Awesome Cursor Rules Community",
+      url: "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/go-servemux-rest-api-cursorrules-prompt-file/.cursorrules",
     },
     installation: {
-      type: 'manual',
-      instructions: 'Copy the content to .cursorrules in your project root.',
+      type: "manual",
+      instructions: "Copy the content to .cursorrules in your project root.",
     },
-    verified: true,
-    createdAt: '2025-12-06',
+    createdAt: "2025-12-06",
   },
   {
-    id: 'laravel-package-dev',
-    name: 'Laravel Package Development',
-    description: 'Best practices for developing Laravel packages, including structure, naming conventions, and testing.',
+    id: "laravel-package-dev",
+    name: "Laravel Package Development",
+    description:
+      "Best practices for developing Laravel packages, including structure, naming conventions, and testing.",
     fullDescription: `You are a highly skilled Laravel package developer tasked with creating a new package. Your goal is to provide a detailed plan and code structure for the package based on the given project description and specific requirements.
 
 1. Development Guidelines:
@@ -425,25 +426,25 @@ Leverage the power and simplicity of Go's standard library to create efficient a
   - Outline the documentation structure, including README.md, usage examples, and API references
 
 Remember to adhere to the specified coding standards, development guidelines, and Laravel best practices throughout your plan and code samples. Ensure that your response is detailed, well-structured, and provides a clear roadmap for developing the Laravel package based on the given project description and requirements.`,
-    tool: 'cursor',
-    type: 'rule',
-    category: 'web',
-    tags: ['Laravel', 'PHP', 'Package Development'],
+    tool: "cursor",
+    type: "rule",
+    category: "web",
+    tags: ["Laravel", "PHP", "Package Development"],
     author: {
-      name: 'Awesome Cursor Rules Community',
-      url: 'https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/laravel-php-83-cursorrules-prompt-file/.cursorrules',
+      name: "Awesome Cursor Rules Community",
+      url: "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/laravel-php-83-cursorrules-prompt-file/.cursorrules",
     },
     installation: {
-      type: 'manual',
-      instructions: 'Copy the content to .cursorrules in your project root.',
+      type: "manual",
+      instructions: "Copy the content to .cursorrules in your project root.",
     },
-    verified: true,
-    createdAt: '2025-12-06',
+    createdAt: "2025-12-06",
   },
   {
-    id: 'python-best-practices',
-    name: 'Python Development Best Practices',
-    description: 'Comprehensive guidelines for Python development, including structure, testing, type hinting, and dependency management.',
+    id: "python-best-practices",
+    name: "Python Development Best Practices",
+    description:
+      "Comprehensive guidelines for Python development, including structure, testing, type hinting, and dependency management.",
     fullDescription: `You are an AI assistant specialized in Python development. Your approach emphasizes:
 
 - Clear project structure with separate directories for source code, tests, docs, and config.
@@ -471,25 +472,25 @@ from _pytest.fixtures import FixtureRequest
 from _pytest.logging import LogCaptureFixture
 from _pytest.monkeypatch import MonkeyPatch
 from pytest_mock.plugin import MockerFixture`,
-    tool: 'cursor',
-    type: 'rule',
-    category: 'coding',
-    tags: ['Python', 'Best Practices', 'Type Hinting'],
+    tool: "cursor",
+    type: "rule",
+    category: "coding",
+    tags: ["Python", "Best Practices", "Type Hinting"],
     author: {
-      name: 'Awesome Cursor Rules Community',
-      url: 'https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/python-cursorrules-prompt-file-best-practices/.cursorrules',
+      name: "Awesome Cursor Rules Community",
+      url: "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/python-cursorrules-prompt-file-best-practices/.cursorrules",
     },
     installation: {
-      type: 'manual',
-      instructions: 'Copy the content to .cursorrules in your project root.',
+      type: "manual",
+      instructions: "Copy the content to .cursorrules in your project root.",
     },
-    verified: true,
-    createdAt: '2025-12-06',
+    createdAt: "2025-12-06",
   },
   {
-    id: 'swiftui-modern-guidelines',
-    name: 'SwiftUI Modern Guidelines',
-    description: 'Rules for maintainable, clean SwiftUI code using latest 2024 features and best practices.',
+    id: "swiftui-modern-guidelines",
+    name: "SwiftUI Modern Guidelines",
+    description:
+      "Rules for maintainable, clean SwiftUI code using latest 2024 features and best practices.",
     fullDescription: `you are an expert in coding with swift, swift ui. you always write maintainable code and clean code.
 focus on latest august, september 2024 version of the documentation and features.
 your descriptions should be short and concise.
@@ -508,25 +509,25 @@ Master Layout Tools: Employ VStack, HStack, ZStack, Spacer, and Padding for resp
 Add Visual Flair: Enhance UIs with shadows, gradients, blurs, custom shapes, and animations using the .animation() modifier for smooth transitions.
 
 Design for Interaction: Incorporate gestures (swipes, long presses), haptic feedback, clear navigation, and responsive elements to improve user engagement and satisfaction.`,
-    tool: 'cursor',
-    type: 'rule',
-    category: 'coding',
-    tags: ['SwiftUI', 'Swift', 'iOS'],
+    tool: "cursor",
+    type: "rule",
+    category: "coding",
+    tags: ["SwiftUI", "Swift", "iOS"],
     author: {
-      name: 'Awesome Cursor Rules Community',
-      url: 'https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/swiftui-guidelines-cursorrules-prompt-file/.cursorrules',
+      name: "Awesome Cursor Rules Community",
+      url: "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/swiftui-guidelines-cursorrules-prompt-file/.cursorrules",
     },
     installation: {
-      type: 'manual',
-      instructions: 'Copy the content to .cursorrules in your project root.',
+      type: "manual",
+      instructions: "Copy the content to .cursorrules in your project root.",
     },
-    verified: true,
-    createdAt: '2025-12-06',
+    createdAt: "2025-12-06",
   },
   {
-    id: 'solidity-security-best-practices',
-    name: 'Solidity Security Best Practices',
-    description: 'Expert guidelines for secure Solidity smart contract development, including gas optimization and testing.',
+    id: "solidity-security-best-practices",
+    name: "Solidity Security Best Practices",
+    description:
+      "Expert guidelines for secure Solidity smart contract development, including gas optimization and testing.",
     fullDescription: `You are an expert in Solidity and smart contract security.
 
 General Rules
@@ -595,25 +596,25 @@ Solidity Best Practices
 - Implement effective error propagation patterns in internal functions.
 
 Testing and Quality Assurance`,
-    tool: 'cursor',
-    type: 'rule',
-    category: 'web',
-    tags: ['Solidity', 'Smart Contracts', 'Security'],
+    tool: "cursor",
+    type: "rule",
+    category: "web",
+    tags: ["Solidity", "Smart Contracts", "Security"],
     author: {
-      name: 'Awesome Cursor Rules Community',
-      url: 'https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/solidity-foundry-cursorrules-prompt-file/.cursorrules',
+      name: "Awesome Cursor Rules Community",
+      url: "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/solidity-foundry-cursorrules-prompt-file/.cursorrules",
     },
     installation: {
-      type: 'manual',
-      instructions: 'Copy the content to .cursorrules in your project root.',
+      type: "manual",
+      instructions: "Copy the content to .cursorrules in your project root.",
     },
-    verified: true,
-    createdAt: '2025-12-06',
+    createdAt: "2025-12-06",
   },
   {
-    id: 'javascript-typescript-code-quality',
-    name: 'JS/TS Code Quality Pro',
-    description: 'Senior full-stack developer guidelines for clean, maintainable, and simple JavaScript/TypeScript code.',
+    id: "javascript-typescript-code-quality",
+    name: "JS/TS Code Quality Pro",
+    description:
+      "Senior full-stack developer guidelines for clean, maintainable, and simple JavaScript/TypeScript code.",
     fullDescription: `# Persona
 
 You are a senior full-stack developer. One of those rare 10x developers that has incredible knowledge.
@@ -668,25 +669,25 @@ When responding to questions, use the Chain of Thought method. Outline a detaile
 **Code change = potential for bugs and technical debt.**
 
 Follow these guidelines to produce high-quality code and improve your coding skills. If you have any questions or need clarification, don’t hesitate to ask!`,
-    tool: 'cursor',
-    type: 'rule',
-    category: 'coding',
-    tags: ['JavaScript', 'TypeScript', 'Code Quality'],
+    tool: "cursor",
+    type: "rule",
+    category: "coding",
+    tags: ["JavaScript", "TypeScript", "Code Quality"],
     author: {
-      name: 'Awesome Cursor Rules Community',
-      url: 'https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/javascript-typescript-code-quality-cursorrules-pro/.cursorrules',
+      name: "Awesome Cursor Rules Community",
+      url: "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/javascript-typescript-code-quality-cursorrules-pro/.cursorrules",
     },
     installation: {
-      type: 'manual',
-      instructions: 'Copy the content to .cursorrules in your project root.',
+      type: "manual",
+      instructions: "Copy the content to .cursorrules in your project root.",
     },
-    verified: true,
-    createdAt: '2025-12-06',
+    createdAt: "2025-12-06",
   },
   {
-    id: 'htmx-flask-best-practices',
-    name: 'HTMX & Flask Best Practices',
-    description: 'Guidelines for integrating HTMX with Flask, covering structure and additional instructions.',
+    id: "htmx-flask-best-practices",
+    name: "HTMX & Flask Best Practices",
+    description:
+      "Guidelines for integrating HTMX with Flask, covering structure and additional instructions.",
     fullDescription: `// HTMX with Flask .cursorrules
 
 // HTMX and Flask best practices
@@ -726,25 +727,25 @@ const additionalInstructions = \`
 6. Follow Flask's application factory pattern
 7. Use environment variables for configuration
 \`;`,
-    tool: 'cursor',
-    type: 'rule',
-    category: 'web',
-    tags: ['HTMX', 'Flask', 'Python'],
+    tool: "cursor",
+    type: "rule",
+    category: "web",
+    tags: ["HTMX", "Flask", "Python"],
     author: {
-      name: 'Awesome Cursor Rules Community',
-      url: 'https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/htmx-flask-cursorrules-prompt-file/.cursorrules',
+      name: "Awesome Cursor Rules Community",
+      url: "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/htmx-flask-cursorrules-prompt-file/.cursorrules",
     },
     installation: {
-      type: 'manual',
-      instructions: 'Copy the content to .cursorrules in your project root.',
+      type: "manual",
+      instructions: "Copy the content to .cursorrules in your project root.",
     },
-    verified: true,
-    createdAt: '2025-12-06',
+    createdAt: "2025-12-06",
   },
   {
-    id: 'deno-automation-integration',
-    name: 'Deno Automation Integration',
-    description: 'Automation scripts and workflows for Deno projects, focused on consistency and efficiency.',
+    id: "deno-automation-integration",
+    name: "Deno Automation Integration",
+    description:
+      "Automation scripts and workflows for Deno projects, focused on consistency and efficiency.",
     fullDescription: `This project contains automation scripts and workflows for the @findhow packages, based on the original Deno automation repository. The goal is to provide consistent and efficient automation for the @findhow ecosystem.
 
 The purpose of this project is to refactor and adapt the automation scripts from @https://github.com/denoland/automation for use with the @findhow packages found at @https://github.com/zhorton34/findhow.
@@ -758,25 +759,25 @@ When updating documentation:
 When creating or modifying automation scripts:
 
 Remember to thoroughly test all modifications to ensure they work correctly with the @findhow ecosystem before merging changes into the main branch.`,
-    tool: 'cursor',
-    type: 'rule',
-    category: 'web',
-    tags: ['Deno', 'Automation'],
+    tool: "cursor",
+    type: "rule",
+    category: "web",
+    tags: ["Deno", "Automation"],
     author: {
-      name: 'Awesome Cursor Rules Community',
-      url: 'https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/deno-integration-techniques-cursorrules-prompt-fil/.cursorrules',
+      name: "Awesome Cursor Rules Community",
+      url: "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/deno-integration-techniques-cursorrules-prompt-fil/.cursorrules",
     },
     installation: {
-      type: 'manual',
-      instructions: 'Copy the content to .cursorrules in your project root.',
+      type: "manual",
+      instructions: "Copy the content to .cursorrules in your project root.",
     },
-    verified: true,
-    createdAt: '2025-12-06',
+    createdAt: "2025-12-06",
   },
   {
-    id: 'react-native-expo-best-practices',
-    name: 'React Native Expo Best Practices',
-    description: 'Concise guide for React Native Expo development, including folder structure and key instructions.',
+    id: "react-native-expo-best-practices",
+    name: "React Native Expo Best Practices",
+    description:
+      "Concise guide for React Native Expo development, including folder structure and key instructions.",
     fullDescription: `// React Native Expo .cursorrules
 
 // React Native Expo best practices
@@ -815,25 +816,25 @@ const additionalInstructions = \`
 6. Follow React Native best practices for performance
 7. Use Expo's OTA updates for quick deployments
 \`;`,
-    tool: 'cursor',
-    type: 'rule',
-    category: 'coding',
-    tags: ['React Native', 'Expo', 'Mobile'],
+    tool: "cursor",
+    type: "rule",
+    category: "coding",
+    tags: ["React Native", "Expo", "Mobile"],
     author: {
-      name: 'Awesome Cursor Rules Community',
-      url: 'https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/react-native-expo-cursorrules-prompt-file/.cursorrules',
+      name: "Awesome Cursor Rules Community",
+      url: "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/react-native-expo-cursorrules-prompt-file/.cursorrules",
     },
     installation: {
-      type: 'manual',
-      instructions: 'Copy the content to .cursorrules in your project root.',
+      type: "manual",
+      instructions: "Copy the content to .cursorrules in your project root.",
     },
-    verified: true,
-    createdAt: '2025-12-06',
+    createdAt: "2025-12-06",
   },
   {
-    id: 'java-springboot-expert',
-    name: 'Java Spring Boot Expert',
-    description: 'Expert rules for Java Spring Boot development, covering best practices and error handling.',
+    id: "java-springboot-expert",
+    name: "Java Spring Boot Expert",
+    description:
+      "Expert rules for Java Spring Boot development, covering best practices and error handling.",
     fullDescription: `Instruction to developer: save this file as .cursorrules and place it on the root project directory
 
 You are an expert Java Spring Boot developer.
@@ -856,19 +857,18 @@ public class GlobalExceptionHandler {
     }
 }
 \`\`\``,
-    tool: 'cursor',
-    type: 'rule',
-    category: 'coding',
-    tags: ['Java', 'Spring Boot'],
+    tool: "cursor",
+    type: "rule",
+    category: "coding",
+    tags: ["Java", "Spring Boot"],
     author: {
-      name: 'Awesome Cursor Rules Community',
-      url: 'https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/java-springboot-jpa-cursorrules-prompt-file/.cursorrules',
+      name: "Awesome Cursor Rules Community",
+      url: "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/java-springboot-jpa-cursorrules-prompt-file/.cursorrules",
     },
     installation: {
-      type: 'manual',
-      instructions: 'Copy the content to .cursorrules in your project root.',
+      type: "manual",
+      instructions: "Copy the content to .cursorrules in your project root.",
     },
-    verified: true,
-    createdAt: '2025-12-06',
+    createdAt: "2025-12-06",
   },
 ];
