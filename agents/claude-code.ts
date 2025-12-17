@@ -435,4 +435,36 @@ Combine with the Puppeteer MCP plugin for a complete testing workflow.`,
     },
     createdAt: '2025-12-06',
   },
+  {
+    id: 'project-scaffolding-skill',
+    name: 'Project Scaffolding Skill',
+    description: 'IDE-grade project scaffolding wizard for 70+ project types including React, Next.js, FastAPI, and more.',
+    fullDescription: `An IDE-grade project scaffolding wizard comparable to WebStorm and PyCharm, integrated as a skill for Claude Code.
+
+Features:
+- 70+ Project Templates spanning web, mobile, desktop, and backend development
+- Interactive wizard workflow with step-by-step configuration
+- Framework-specific options (TypeScript, CSS frameworks, state management, routing)
+- SDK/environment configuration with version selection
+- Database & ORM setup (PostgreSQL, MySQL, SQLite, MongoDB)
+- Code quality tools (ESLint, Prettier, Ruff, mypy, golangci-lint)
+- Testing configuration (Vitest, Jest, pytest, Playwright)
+- DevOps ready with Docker, docker-compose, and GitHub Actions CI/CD
+
+Supported project types include: static websites, React, Next.js, Vue, Svelte, Angular, Astro, React Native, Expo, Flutter, Tauri, Electron, FastAPI, Django, Express, NestJS, Go/Gin, Rust/Axum, Spring Boot, and many more.`,
+    tool: 'claude-code',
+    type: 'skill',
+    category: 'coding',
+    tags: ['Scaffolding', 'Templates', 'Project Setup', 'IDE'],
+    author: {
+      name: 'Hatem Mohamed',
+      url: 'https://github.com/hmohamed01/Claude-Code-Scaffolding-Skill',
+      github: 'https://github.com/hmohamed01/Claude-Code-Scaffolding-Skill',
+    },
+    installation: {
+      type: 'manual',
+      instructions: '1. Clone: git clone https://github.com/hmohamed01/Claude-Code-Scaffolding-Skill\n2. Install the skill:\n   mkdir -p ~/.claude/skills/project-scaffolding\n   cp -r SKILL.md scripts/ references/ assets/ ~/.claude/skills/project-scaffolding/\n3. Verify installation:\n   ls ~/.claude/skills/project-scaffolding/\n4. Use with natural language: "Create a Next.js project with TypeScript and Tailwind" or "Set up a FastAPI backend with PostgreSQL"\n\nGitHub: https://github.com/hmohamed01/Claude-Code-Scaffolding-Skill',
+    },
+    createdAt: '2025-11-11',
+  },
 ];
