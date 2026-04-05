@@ -871,4 +871,41 @@ public class GlobalExceptionHandler {
     },
     createdAt: "2025-12-06",
   },
+  {
+    id: "cursor-rules-pack-v2",
+    name: "Cursor Rules Pack v2",
+    description:
+      "27 production-tested Cursor rules for React, Next.js, Python, APIs, freelancers, and more.",
+    fullDescription: `A curated pack of 27 professional .cursorrules files, each purpose-built for a specific stack or context.
+
+Included rules cover:
+- React + TypeScript (component patterns, prop validation, hooks)
+- Next.js 14+ (App Router, server components, API routes)
+- Python / FastAPI (async patterns, Pydantic, error handling)
+- REST API design (versioning, status codes, documentation)
+- Database / ORM (query optimization, migrations, N+1 avoidance)
+- Freelancer workflow (client onboarding, multi-project context switching)
+- DeFi / Web3 (reentrancy guards, gas constraints, security)
+- And more...
+
+Each rule is ready to drop into your project root as \`.cursorrules\`. No configuration needed — Cursor picks them up automatically.`,
+    tool: "cursor",
+    type: "rule",
+    category: "productivity",
+    tags: ["react", "nextjs", "python", "freelancer", "web3"],
+    author: {
+      name: "OliviaCraft",
+      url: "https://oliviacraft.lat",
+    },
+    links: {
+      website: "https://oliviacraftlat.gumroad.com/l/wyaeil",
+    },
+    installation: {
+      type: "manual",
+      instructions:
+        "Download the pack from https://oliviacraftlat.gumroad.com/l/wyaeil. Choose the rule for your stack and copy it to .cursorrules in your project root.",
+    },
+    license: "Proprietary",
+    createdAt: "2026-04-05",
+  },
 ];
