@@ -215,4 +215,134 @@ export const mcpAgents: Agent[] = [
     },
     createdAt: "2025-12-06",
   },
+
+  // ------------------------------------------------------------------
+  // BROWSER, DOCS & REASONING
+  // ------------------------------------------------------------------
+  {
+    id: "mcp-server-playwright",
+    name: "Playwright MCP",
+    description:
+      "Browser automation for AI agents via Playwright accessibility snapshots — navigate, click, fill, and test the web.",
+    fullDescription:
+      "Microsoft's official MCP server for browser automation. It drives a real browser through structured accessibility snapshots rather than screenshots, so agents can navigate pages, click elements, fill forms, and run end-to-end tests reliably and fast.\n\nFully open source and maintained by Microsoft.",
+    tool: "mcp",
+    type: "plugin",
+    category: "testing",
+    tags: ["MCP", "Playwright", "Browser", "Testing"],
+    author: {
+      name: "Microsoft",
+      url: "https://github.com/microsoft/playwright-mcp",
+    },
+    installation: {
+      type: "npm",
+      instructions: "npx @playwright/mcp@latest",
+    },
+    createdAt: "2026-05-29",
+  },
+  {
+    id: "mcp-server-context7",
+    name: "Context7 MCP",
+    description:
+      "Pulls up-to-date, version-accurate library docs and code examples into your agent's context in real time.",
+    fullDescription:
+      "Context7 (by Upstash) fetches current official documentation and code snippets for the libraries you're actually using, so the model stops suggesting outdated APIs. Works without an API key for basic use; a free key raises rate limits.",
+    tool: "mcp",
+    type: "plugin",
+    category: "coding",
+    tags: ["MCP", "Documentation", "Context", "Upstash"],
+    author: {
+      name: "Upstash",
+      url: "https://github.com/upstash/context7",
+    },
+    installation: {
+      type: "npm",
+      instructions: "npx -y @upstash/context7-mcp",
+    },
+    createdAt: "2026-05-29",
+  },
+  {
+    id: "mcp-server-chrome-devtools",
+    name: "Chrome DevTools MCP",
+    description:
+      "Connects coding agents to Chrome DevTools — inspect the DOM, read console and network logs, and debug live pages.",
+    fullDescription:
+      "Google's official MCP server that wires an agent into Chrome DevTools. The agent can inspect elements, capture performance traces, read console and network activity, and reproduce issues in a real Chrome instance — closing the loop between writing code and seeing how it behaves in the browser.",
+    tool: "mcp",
+    type: "plugin",
+    category: "debugging",
+    tags: ["MCP", "Chrome", "DevTools", "Debugging"],
+    author: {
+      name: "Google Chrome",
+      url: "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    },
+    installation: {
+      type: "npm",
+      instructions: "npx -y chrome-devtools-mcp@latest",
+    },
+    createdAt: "2026-05-29",
+  },
+  {
+    id: "mcp-server-sequential-thinking",
+    name: "Sequential Thinking MCP",
+    description:
+      "Adds a structured, step-by-step reasoning tool so agents can break down and revise hard multi-step problems.",
+    fullDescription:
+      "An official reference server that gives the model a scratchpad for dynamic, reflective problem-solving: it can lay out a chain of thoughts, branch, and revise earlier steps. Useful for planning and complex tasks where a one-shot answer falls short.",
+    tool: "mcp",
+    type: "plugin",
+    category: "productivity",
+    tags: ["MCP", "Reasoning", "Planning", "Official"],
+    author: {
+      name: "Model Context Protocol",
+      url: "https://github.com/modelcontextprotocol/servers",
+    },
+    installation: {
+      type: "npm",
+      instructions: "npx -y @modelcontextprotocol/server-sequential-thinking",
+    },
+    createdAt: "2026-05-29",
+  },
+  {
+    id: "mcp-server-fetch",
+    name: "Fetch MCP Server",
+    description:
+      "Fetches a URL and converts it to clean, readable content for the model — the simplest way to ground answers in real pages.",
+    fullDescription:
+      "An official reference server for web content fetching. It retrieves a URL and converts the HTML to markdown the model can actually read, with optional chunking for long pages. Requires uv (the Python runner).",
+    tool: "mcp",
+    type: "plugin",
+    category: "data",
+    tags: ["MCP", "Web", "Fetch", "Official"],
+    author: {
+      name: "Model Context Protocol",
+      url: "https://github.com/modelcontextprotocol/servers",
+    },
+    installation: {
+      type: "other",
+      instructions: "uvx mcp-server-fetch",
+    },
+    createdAt: "2026-05-29",
+  },
+  {
+    id: "mcp-server-git",
+    name: "Git MCP Server",
+    description:
+      "Lets agents read, search, and manipulate local Git repositories — history, diffs, branches, and commits.",
+    fullDescription:
+      "An official reference server for working with local Git repositories. Agents can inspect history and diffs, search the tree, stage changes, and commit — without shelling out blindly. Distinct from the GitHub/GitLab servers, which talk to hosted APIs. Requires uv (the Python runner).",
+    tool: "mcp",
+    type: "plugin",
+    category: "coding",
+    tags: ["MCP", "Git", "Version Control", "Official"],
+    author: {
+      name: "Model Context Protocol",
+      url: "https://github.com/modelcontextprotocol/servers",
+    },
+    installation: {
+      type: "other",
+      instructions: "uvx mcp-server-git --repository /path/to/repo",
+    },
+    createdAt: "2026-05-29",
+  },
 ];
