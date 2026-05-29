@@ -7,10 +7,13 @@
   "type": "module",
   "scripts": {
     "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "validate": "tsc --noEmit && tsx scripts/validate.ts"
   },
   "devDependencies": {
     "@types/node": "^25.9.1",
+    "prettier": "^3.8.3",
     "tsx": "^4.22.3",
     "typescript": "^6.0.3"
   }

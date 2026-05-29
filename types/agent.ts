@@ -1,6 +1,6 @@
-export type AgentTool = 'cursor' | 'windsurf' | 'claude-code' | 'replit' | 'mcp';
+export type AgentTool = "cursor" | "windsurf" | "claude-code" | "replit" | "mcp";
 
-export type AgentType = 'rule' | 'agent' | 'plugin' | 'skill' | 'template';
+export type AgentType = "rule" | "agent" | "plugin" | "skill" | "template";
 
 export interface AgentAuthor {
   name: string;
@@ -9,7 +9,7 @@ export interface AgentAuthor {
 }
 
 export interface AgentInstallation {
-  type?: 'manual' | 'npm' | 'brew' | 'curl' | 'extension' | 'other';
+  type?: "manual" | "npm" | "brew" | "curl" | "extension" | "other";
   manual?: string;
   command?: string;
   url?: string;
@@ -23,7 +23,7 @@ export interface Agent {
   fullDescription?: string;
   tool: AgentTool;
   type: AgentType;
-  category: 'coding' | 'debugging' | 'testing' | 'productivity' | 'data' | 'web' | 'other';
+  category: "coding" | "debugging" | "testing" | "productivity" | "data" | "web" | "other";
   tags: string[];
   author: AgentAuthor;
   installation: AgentInstallation;

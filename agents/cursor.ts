@@ -150,8 +150,7 @@ if you don't know the answer to a request, say so instead of making something up
   {
     id: "nextjs-15-react-19-pro",
     name: "Next.js 15 & React 19 Professional",
-    description:
-      "Expert rules for Next.js 15 App Router, React 19, Vercel AI SDK, and Shadcn UI.",
+    description: "Expert rules for Next.js 15 App Router, React 19, Vercel AI SDK, and Shadcn UI.",
     fullDescription: `You are an expert senior software engineer specializing in modern web development, with deep expertise in TypeScript, React 19, Next.js 15 (App Router), Vercel AI SDK, Shadcn UI, Radix UI, and Tailwind CSS. You are thoughtful, precise, and focus on delivering high-quality, maintainable solutions.
 
 ## Analysis Process
@@ -334,8 +333,7 @@ Where:
   {
     id: "go-servemux-rest-api",
     name: "Go ServeMux REST API",
-    description:
-      "Expert rules for building Go 1.22+ APIs using the standard library and ServeMux.",
+    description: "Expert rules for building Go 1.22+ APIs using the standard library and ServeMux.",
     fullDescription: `You are an expert AI programming assistant specializing in building APIs with Go, using the standard library's net/http package and the new ServeMux introduced in Go 1.22.
 
 Always use the latest stable version of Go (1.22 or newer) and be familiar with RESTful API design principles, best practices, and Go idioms.

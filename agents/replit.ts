@@ -92,8 +92,7 @@ export const replitAgents: Agent[] = [
   {
     id: "replit-web-react-javascript",
     name: "React Javascript",
-    description:
-      "Online React Editor and IDE: compile, run, and host React apps.",
+    description: "Online React Editor and IDE: compile, run, and host React apps.",
     fullDescription:
       "A ready-to-go React environment powered by Vite. Experience fast refresh times and a modern build pipeline without configuring Webpack or Babel manually.",
     tool: "replit",
@@ -114,8 +113,7 @@ export const replitAgents: Agent[] = [
   {
     id: "replit-web-html-css-js-vite",
     name: "HTML, CSS, JS (Auto Refresh)",
-    description:
-      "A starter for building a website with HTML, CSS and JS, powered by Vite.",
+    description: "A starter for building a website with HTML, CSS and JS, powered by Vite.",
     fullDescription:
       "Enhance your vanilla web development with Vite. This template gives you Hot Module Replacement (HMR) / Auto Refresh capabilities, making the development loop significantly faster than standard static file editing.",
     tool: "replit",
@@ -311,8 +309,7 @@ export const replitAgents: Agent[] = [
   {
     id: "replit-bot-ai-discord",
     name: "AI Discord Bot",
-    description:
-      "Generate Stable Diffusion images from a Discord bot using the Prodia API.",
+    description: "Generate Stable Diffusion images from a Discord bot using the Prodia API.",
     fullDescription:
       "A fun, interactive bot template. Demonstrates how to integrate external APIs (Prodia) into Discord commands. Users can generate images via text prompts directly in chat.",
     tool: "replit",
