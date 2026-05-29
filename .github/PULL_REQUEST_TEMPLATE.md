@@ -27,7 +27,7 @@ Before submitting, please confirm:
 - [ ] I added 2-5 relevant tags
 - [ ] I included today's date in `createdAt` field
 - [ ] I added this agent to the correct file (`agents/[tool].ts`)
-- [ ] The build passes (`npm run build` if tested locally)
+- [ ] `npm run validate` passes (if tested locally)
 
 ## Additional Notes
 

@@ -64,7 +64,7 @@ Thank you for contributing! This guide will help you add agents quickly.
 - `links.github` - Source code URL
 - `links.website` - Project website
 - `links.demo` - Demo video (YouTube)
-- `license` - License identifier (e.g., "MIT", "Apache-2.0", "GPL-3.0", "Proprietary")
+- `license` - License identifier (e.g., "MIT", "Apache-2.0", "GPL-3.0")
 
 **Full type definition:** See `types/agent.ts`
 
@@ -74,21 +74,22 @@ Thank you for contributing! This guide will help you add agents quickly.
 
 **Your agent must:**
 
-1. ✅ **Work** - Test it yourself first
-2. ✅ **Be useful** - Solve a real problem
-3. ✅ **Have clear docs** - Installation instructions required
-4. ✅ **Give credit** - Attribute original author if applicable
+1. ✅ **Be free to use** - no paid, subscription, or paywalled tools
+2. ✅ **Work** - Test it yourself first
+3. ✅ **Be useful** - Solve a real problem
+4. ✅ **Have clear docs** - Installation instructions required
+5. ✅ **Give credit** - Attribute original author if applicable
 
-**We reject:** spam, duplicates, broken agents, malicious code
+**We reject:** paid or paywalled tools, spam, duplicates, broken agents, malicious code
 
 ---
 
 ## 🔍 Review Process
 
-1. **Automated checks** (instant) - TypeScript & schema validation
-2. **Manual review** (24-48hrs) - We test your agent
-3. **Approval** - We merge and set `verified: true`
-4. **Go live** - Syncs to agentdepot.dev within 24 hours
+1. **Automated checks** (on every PR) - `npm run validate` runs TypeScript + schema checks and duplicate-ID detection
+2. **Manual review** - a maintainer confirms the tool is free, real, and useful
+3. **Merge** - once it passes, the PR is merged to `main`
+4. **Go live** - merged agents sync to agentdepot.dev
 
 **Response time:** Usually within 24-48 hours
 

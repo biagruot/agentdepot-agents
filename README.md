@@ -52,38 +52,37 @@ We review within 24-48 hours. See [CONTRIBUTING.md](./CONTRIBUTING.md) for detai
 |------|--------|
 | Cursor | 15 |
 | Windsurf | 15 |
-| Claude Code | 15 |
-| MCP | 10 |
+| Claude Code | 16 |
+| MCP | 16 |
 | Replit | 16 |
-| **Total** | **71** |
+| **Total** | **78** |
 
 ---
 
 ## ✅ What We Accept
 
-We accept **real, working** agents that:
+We accept **real, working, free** tools that:
 
-- ✅ Work (we test everything)
+- ✅ **Are free to use** — no paid, subscription, or paywalled tools
+- ✅ Work as described
 - ✅ Solve a real problem
 - ✅ Have clear installation instructions
 - ✅ Credit the original author
 
-We reject: spam, duplicates, broken agents, malicious code.
+We reject: paid or paywalled tools, spam, duplicates, broken agents, and malicious code.
 
 ---
 
 ## 🔍 Review Process
 
-1. **Automated checks** (instant) - GitHub Actions validates your submission
-   - TypeScript compilation
-   - Schema validation
-   - Duplicate ID detection
-   - Required fields check
-2. **Manual review** (24-48hrs) - We test your agent
-3. **Merge** - PR merged to main branch
-4. **Sync** - Agents automatically sync to agentdepot.dev (within 24hrs)
+1. **Automated checks** (on every PR) — [GitHub Actions](.github/workflows/validate.yml) runs `npm run validate`:
+   - TypeScript compilation against the `Agent` schema (required fields and valid enums)
+   - Duplicate `id` detection across all tool files
+2. **Manual review** — a maintainer confirms the tool is free, real, and useful
+3. **Merge** — once it passes, the PR is merged to `main`
+4. **Sync** — merged agents are synced to [agentdepot.dev](https://agentdepot.dev)
 
-**How the sync works:** This is a public data repository. After your PR is merged, agents are synced to the private production repo and deployed to agentdepot.dev.
+This is the public data source for AgentDepot; the web app reads from it.
 
 ---
 
