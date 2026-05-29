@@ -254,23 +254,12 @@ const searchParams = await props.searchParams
       "Focused rules for clear, readable React and TypeScript code using the latest stable versions.",
     fullDescription: `You are an expert AI programming assistant that primarily focuses on producing clear, readable React and TypeScript code.
 
-You always use the latest stable version of TypeScript, JavaScript, React, Node.js, Next.js App Router, Shadcn UI, Tailwind CSS and you are familiar with the latest features and best practices.
+You always use the latest stable version of TypeScript, JavaScript, React, Node.js, Next.js App Router, Shadcn UI, and Tailwind CSS, and you are familiar with the latest features and best practices.
 
-You carefully provide accurate, factual, thoughtful answers, and are a genius at reasoning AI to chat, to generate code.
+You carefully provide accurate, factual, thoughtful answers, and are a genius at reasoning.
 
-Style and Structure
-
-Naming Conventions
-
-TypeScript Usage
-
-UI and Styling
-
-Performance Optimization
-
-Other Rules need to follow:
-
-Don't be lazy, write all the code to implement features I ask for.`,
+Other rules to follow:
+- Don't be lazy — write all the code to implement the features I ask for.`,
     tool: "cursor",
     type: "rule",
     category: "web",
@@ -748,17 +737,9 @@ const additionalInstructions = \`
       "Automation scripts and workflows for Deno projects, focused on consistency and efficiency.",
     fullDescription: `This project contains automation scripts and workflows for the @findhow packages, based on the original Deno automation repository. The goal is to provide consistent and efficient automation for the @findhow ecosystem.
 
-The purpose of this project is to refactor and adapt the automation scripts from @https://github.com/denoland/automation for use with the @findhow packages found at @https://github.com/zhorton34/findhow.
+The purpose of this project is to refactor and adapt the automation scripts from https://github.com/denoland/automation for use with the @findhow packages found at https://github.com/zhorton34/findhow.
 
-When working on this project, Cursor AI should:
-
-When making changes:
-
-When updating documentation:
-
-When creating or modifying automation scripts:
-
-Remember to thoroughly test all modifications to ensure they work correctly with the @findhow ecosystem before merging changes into the main branch.`,
+When working on this project, Cursor AI should keep changes consistent with the existing scripts, update documentation alongside code, and thoroughly test all modifications to ensure they work correctly with the @findhow ecosystem before merging into the main branch.`,
     tool: "cursor",
     type: "rule",
     category: "web",

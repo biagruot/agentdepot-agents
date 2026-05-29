@@ -316,7 +316,7 @@ Ideal for data analysis reports, financial models, and structured data exports.`
     },
     installation: {
       type: 'manual',
-      instructions: '1. Clone skills repository: git clone https://github.com/anthropics/skills\n2. Copy the xlsx skill:\n   cp -r skills/xlsx ~/.claude/skills/\n3. Install dependencies:\n   cd ~/.claude/skills/xlsx && npm install\n4. Restart Claude Desktop\n5. Invoke with: "Create an Excel spreadsheet with..."\n\nGitHub: https://github.com/anthropics/skills',
+      instructions: '1. Clone the skills repository: git clone https://github.com/anthropics/skills\n2. Copy the xlsx skill:\n   cp -r skills/xlsx ~/.claude/skills/\n3. Restart Claude Desktop\n4. Invoke with: "Create an Excel spreadsheet with..."\n\nGitHub: https://github.com/anthropics/skills',
     },
     createdAt: '2025-12-06',
   },
@@ -345,14 +345,14 @@ Perfect for generating reports, proposals, whitepapers, and documentation.`,
     },
     installation: {
       type: 'manual',
-      instructions: '1. Clone: git clone https://github.com/anthropics/skills\n2. Copy Word skill:\n   cp -r skills/docx ~/.claude/skills/\n3. Install dependencies:\n   cd ~/.claude/skills/docx && npm install\n4. Restart Claude Desktop\n5. Use with: "Create a Word document with..."\n\nGitHub: https://github.com/anthropics/skills',
+      instructions: '1. Clone: git clone https://github.com/anthropics/skills\n2. Copy the Word skill:\n   cp -r skills/docx ~/.claude/skills/\n3. Restart Claude Desktop\n4. Use with: "Create a Word document with..."\n\nGitHub: https://github.com/anthropics/skills',
     },
     createdAt: '2025-12-06',
   },
   {
     id: 'pdf-processing-skill',
     name: 'PDF Processor',
-    description: 'Advanced skill for regarding, analyzing, and extracting data from PDF files.',
+    description: 'Advanced skill for reading, analyzing, and extracting data from PDF files.',
     fullDescription: `A comprehensive skill for PDF interaction.
 
 Allows Claude to:
@@ -373,7 +373,7 @@ Essential for research, legal document review, and data extraction pipelines.`,
     },
     installation: {
       type: 'manual',
-      instructions: '1. Clone: git clone https://github.com/anthropics/skills\n2. Copy PDF skill:\n   cp -r skills/pdf ~/.claude/skills/\n3. Install dependencies:\n   cd ~/.claude/skills/pdf && npm install\n4. Restart Claude Desktop\n5. Ask Claude to "Extract data from this PDF..." or "Analyze this PDF document"\n\nGitHub: https://github.com/anthropics/skills',
+      instructions: '1. Clone: git clone https://github.com/anthropics/skills\n2. Copy the PDF skill:\n   cp -r skills/pdf ~/.claude/skills/\n3. Restart Claude Desktop\n4. Ask Claude to "Extract data from this PDF..." or "Analyze this PDF document"\n\nGitHub: https://github.com/anthropics/skills',
     },
     createdAt: '2025-12-06',
   },
@@ -402,7 +402,7 @@ Use this skill to quickly extend Claude's capabilities with your own custom tool
     },
     installation: {
       type: 'manual',
-      instructions: '1. Clone: git clone https://github.com/anthropics/skills\n2. Copy MCP generator skill:\n   cp -r skills/mcp-builder ~/.claude/skills/\n3. Install dependencies:\n   cd ~/.claude/skills/mcp-builder && npm install\n4. Restart Claude Desktop\n5. Ask: "Create a new MCP server for [your use case]"\n\nGitHub: https://github.com/anthropics/skills',
+      instructions: '1. Clone: git clone https://github.com/anthropics/skills\n2. Copy the MCP generator skill:\n   cp -r skills/mcp-builder ~/.claude/skills/\n3. Restart Claude Desktop\n4. Ask: "Create a new MCP server for [your use case]"\n\nGitHub: https://github.com/anthropics/skills',
     },
     createdAt: '2025-12-06',
   },
@@ -431,7 +431,7 @@ Combine with the Puppeteer MCP plugin for a complete testing workflow.`,
     },
     installation: {
       type: 'manual',
-      instructions: '1. Clone: git clone https://github.com/anthropics/skills\n2. Copy testing skill:\n   cp -r skills/webapp-testing ~/.claude/skills/\n3. Install dependencies:\n   cd ~/.claude/skills/webapp-testing && npm install\n4. Restart Claude Desktop\n5. Use with: "Create Playwright tests for..." or "Generate a test plan for..."\n\nGitHub: https://github.com/anthropics/skills',
+      instructions: '1. Clone: git clone https://github.com/anthropics/skills\n2. Copy the testing skill:\n   cp -r skills/webapp-testing ~/.claude/skills/\n3. Restart Claude Desktop\n4. Use with: "Create Playwright tests for..." or "Generate a test plan for..."\n\nGitHub: https://github.com/anthropics/skills',
     },
     createdAt: '2025-12-06',
   },
