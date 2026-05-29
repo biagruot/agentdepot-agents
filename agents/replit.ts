@@ -351,4 +351,48 @@ export const replitAgents: Agent[] = [
     },
     createdAt: "2025-12-06",
   },
+  {
+    id: "replit-nextjs",
+    name: "Next.js",
+    description:
+      "Official Replit template for Next.js — hybrid static & server rendering, TypeScript, and zero-config bundling.",
+    fullDescription:
+      "A ready-to-run Next.js project on Replit. Includes the App Router, TypeScript, fast refresh, and smart bundling with no setup. Fork it and start building full-stack React apps right in the browser.",
+    tool: "replit",
+    type: "template",
+    category: "web",
+    tags: ["Next.js", "React", "TypeScript", "Web"],
+    author: {
+      name: "replit",
+      url: "https://replit.com/@replit",
+    },
+    installation: {
+      type: "other",
+      instructions: 'Click "Use Template" on the Replit project page.',
+      url: "https://replit.com/@replit/Nextjs",
+    },
+    createdAt: "2026-05-30",
+  },
+  {
+    id: "replit-streamlit",
+    name: "Streamlit",
+    description:
+      "Official Replit template for Streamlit — build and share data apps and dashboards in pure Python.",
+    fullDescription:
+      "A pre-configured Streamlit environment on Replit. Turn Python scripts into interactive data apps and dashboards with almost no front-end code, then share them with a public URL.",
+    tool: "replit",
+    type: "template",
+    category: "data",
+    tags: ["Streamlit", "Python", "Data", "Dashboard"],
+    author: {
+      name: "replit",
+      url: "https://replit.com/@replit",
+    },
+    installation: {
+      type: "other",
+      instructions: 'Click "Use Template" on the Replit project page.',
+      url: "https://replit.com/@replit/Streamlit",
+    },
+    createdAt: "2026-05-30",
+  },
 ];

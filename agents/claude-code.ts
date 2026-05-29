@@ -467,4 +467,33 @@ Supported project types include: static websites, React, Next.js, Vue, Svelte, A
     },
     createdAt: '2025-11-11',
   },
+  {
+    id: 'pptx-creation-skill',
+    name: 'PowerPoint Creator',
+    description:
+      'Skill for creating polished PowerPoint presentations with layouts, charts, and images.',
+    fullDescription: `Enables Claude to build professional PowerPoint decks (.pptx).
+
+Features:
+- Slide layouts and master templates
+- Charts, tables, and diagrams
+- Image insertion and positioning
+- Speaker notes and consistent theming
+
+Great for pitch decks, status reports, and training material.`,
+    tool: 'claude-code',
+    type: 'skill',
+    category: 'productivity',
+    tags: ['PowerPoint', 'Presentation', 'Slides', 'Office'],
+    author: {
+      name: 'Anthropic',
+      url: 'https://github.com/anthropics/skills',
+      github: 'https://github.com/anthropics/skills',
+    },
+    installation: {
+      type: 'manual',
+      instructions: '1. Clone: git clone https://github.com/anthropics/skills\n2. Copy the pptx skill:\n   cp -r skills/pptx ~/.claude/skills/\n3. Restart Claude Desktop\n4. Use with: "Create a PowerPoint presentation about..."\n\nGitHub: https://github.com/anthropics/skills',
+    },
+    createdAt: '2026-05-30',
+  },
 ];

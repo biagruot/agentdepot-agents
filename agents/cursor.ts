@@ -852,4 +852,48 @@ public class GlobalExceptionHandler {
     },
     createdAt: "2025-12-06",
   },
+  {
+    id: "cursor-vue3-nuxt3",
+    name: "Vue 3 & Nuxt 3 Expert",
+    description:
+      "Cursor rules for idiomatic Vue 3 + Nuxt 3 with the Composition API and TypeScript.",
+    fullDescription: `Guides Cursor to write modern Vue 3 and Nuxt 3 code: the Composition API with the script-setup syntax, TypeScript, auto-imports, composables, and Nuxt's file-based routing and server routes.
+
+Encourages SOLID component design, correct reactivity, and Nuxt best practices for SSR and data fetching.`,
+    tool: "cursor",
+    type: "rule",
+    category: "web",
+    tags: ["Vue", "Nuxt", "TypeScript"],
+    author: {
+      name: "Awesome Cursor Rules Community",
+      url: "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/vue-3-nuxt-3-development-cursorrules-prompt-file/.cursorrules",
+    },
+    installation: {
+      type: "manual",
+      instructions: "Copy the content to .cursorrules in your project root.",
+    },
+    createdAt: "2026-05-30",
+  },
+  {
+    id: "cursor-python-fastapi",
+    name: "Python FastAPI Expert",
+    description:
+      "Cursor rules for building scalable, async FastAPI services with clean structure and type hints.",
+    fullDescription: `Steers Cursor toward production-grade FastAPI: async endpoints, Pydantic models, dependency injection, and clear router/service separation.
+
+Emphasizes type hints, proper error handling with HTTPException, and idiomatic Python so generated APIs stay clean and maintainable.`,
+    tool: "cursor",
+    type: "rule",
+    category: "coding",
+    tags: ["Python", "FastAPI", "API"],
+    author: {
+      name: "Awesome Cursor Rules Community",
+      url: "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/python-fastapi-cursorrules-prompt-file/.cursorrules",
+    },
+    installation: {
+      type: "manual",
+      instructions: "Copy the content to .cursorrules in your project root.",
+    },
+    createdAt: "2026-05-30",
+  },
 ];

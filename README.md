@@ -50,12 +50,12 @@ We review within 24-48 hours. See [CONTRIBUTING.md](./CONTRIBUTING.md) for detai
 
 | Tool | Agents |
 |------|--------|
-| Cursor | 15 |
-| Windsurf | 15 |
-| Claude Code | 16 |
+| Cursor | 17 |
+| Windsurf | 17 |
+| Claude Code | 17 |
 | MCP | 16 |
-| Replit | 16 |
-| **Total** | **78** |
+| Replit | 18 |
+| **Total** | **85** |
 
 ---
 

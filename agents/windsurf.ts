@@ -364,4 +364,46 @@ Action: Scans routes, updates openapi.yaml.`,
     },
     createdAt: "2025-12-06",
   },
+  {
+    id: "windsurf-prettier",
+    name: "Prettier - Code Formatter",
+    description:
+      "Opinionated formatter that keeps JavaScript, TypeScript, CSS, and more consistently styled on save.",
+    fullDescription:
+      "Prettier is the de facto standard code formatter for web projects. It enforces one consistent style across your whole team so formatting stops being a debate. Works in Windsurf out of the box — pair it with format-on-save.",
+    tool: "windsurf",
+    type: "plugin",
+    category: "productivity",
+    tags: ["Formatting", "Prettier", "Code Style"],
+    author: {
+      name: "Prettier",
+      url: "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode",
+    },
+    installation: {
+      type: "extension",
+      instructions: 'Search "Prettier - Code formatter" in Windsurf Extensions and install.',
+    },
+    createdAt: "2026-05-30",
+  },
+  {
+    id: "windsurf-tailwind-intellisense",
+    name: "Tailwind CSS IntelliSense",
+    description:
+      "Autocomplete, linting, and hover previews for Tailwind CSS utility classes.",
+    fullDescription:
+      "Tailwind CSS IntelliSense brings intelligent autocomplete, syntax highlighting, and linting for Tailwind classes, plus CSS previews on hover. Essential for any project using Tailwind CSS.",
+    tool: "windsurf",
+    type: "plugin",
+    category: "web",
+    tags: ["Tailwind", "CSS", "Autocomplete"],
+    author: {
+      name: "Tailwind Labs",
+      url: "https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss",
+    },
+    installation: {
+      type: "extension",
+      instructions: 'Search "Tailwind CSS IntelliSense" in Windsurf Extensions and install.',
+    },
+    createdAt: "2026-05-30",
+  },
 ];
