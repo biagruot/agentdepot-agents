@@ -1,0 +1,17 @@
+{
+  "name": "agentdepot-agents",
+  "version": "1.0.0",
+  "description": "Open-source database of free AI coding agents for AgentDepot.dev",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "validate": "tsc --noEmit && tsx scripts/validate.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3"
+  }
+}
